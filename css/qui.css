@@ -1,0 +1,189 @@
+ 
+.button {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.title,
+.subtitle {
+  font-family: Montserrat, sans-serif;
+  font-weight: normal;
+}
+
+.animated {
+  -webkit-transition-duration: 0.15s;
+          transition-duration: 0.15s;
+}
+ 
+.qui_back{background-image: url("../images/Exp_Banner-01.jpg"); background-size: cover;}
+
+.questionBox {
+  max-width: 50rem;
+  width: 50rem; 
+  background:  #f25555;
+  position: relative;
+  display: -webkit-box;
+  display: flex;
+  border-radius: 0.5rem;
+  overflow: hidden; float: right;min-height: 260px;
+}
+.questionBox header {
+  background: rgba(0, 0, 0, 0.025);
+  padding: 1.5rem;
+  text-align: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.questionBox header h1 {
+  font-weight: bold;
+  margin-bottom: 1rem !important;
+}
+.questionBox header .progressContainer {
+  width: 60%;
+  margin: 0 auto;
+}
+.questionBox header .progressContainer > progress {
+  margin: 0;
+  border-radius: 5rem;
+  overflow: hidden;
+  border: none;
+  color: #007F0E;
+}
+.questionBox header .progressContainer > progress::-moz-progress-bar {
+  background: #007F0E;
+}
+.questionBox header .progressContainer > progress::-webkit-progress-value {
+  background: #007F0E;
+}
+.questionBox header .progressContainer > p {
+  margin: 0;
+  margin-top: 0.5rem;
+}
+.questionBox .titleContainer {
+  text-align: center;
+    margin: 0 auto;
+    padding: 1.5rem;
+    font-size: 18px;
+    padding: 45px 30px;
+    line-height: 25px;
+    background: #F25555;
+    color: #fff;
+}
+.questionBox .quizForm {
+  display: block;
+  white-space: normal;
+  height: 100%;
+  width: 100%;
+}
+.questionBox .quizForm .quizFormContainer {
+  height: 100%;
+  margin: 15px 18px;
+}
+.questionBox .quizForm .quizFormContainer .field-label {
+  text-align: left;
+  margin-bottom: 0.5rem;
+}
+.questionBox .quizCompleted {
+  width: 100%;
+  padding: 1rem;
+  text-align: center;
+}
+.questionBox .quizCompleted > .icon {
+  color: #FF5252;
+  font-size: 5rem;
+}
+.questionBox .quizCompleted > .icon .is-active {
+  color: #00E676;
+}
+.questionBox .questionContainer {
+  white-space: normal;
+  height: 100%;
+  width: 100%;
+}
+.questionBox .questionContainer .optionContainer {
+  margin-top: 12px;
+  -webkit-box-flex: 1;
+          flex-grow: 1;
+}
+.questionBox .questionContainer .optionContainer .option {
+  border-radius: 290486px;
+  padding: 9px 18px;
+  margin: 0 18px;
+  margin-bottom: 12px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.05);
+  color: rgba(0, 0, 0, 0.85);
+  border: transparent 1px solid;
+}
+.questionBox .questionContainer .optionContainer .option.is-selected {
+  border-color: rgba(0, 0, 0, 0.25);
+  background-color: white;
+}
+.questionBox .questionContainer .optionContainer .option:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.questionBox .questionContainer .optionContainer .option:active {
+  -webkit-transform: scaleX(0.9);
+          transform: scaleX(0.9);
+}
+.questionBox .questionContainer .questionFooter {
+  background: rgba(0, 0, 0, 0.025);
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  width: 100%;
+  align-self: flex-end;    padding: 0px 0px;
+}
+.questionBox .questionContainer .questionFooter .pagination {
+  margin: 15px 25px;
+}
+
+.pagination {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+}
+
+.button {
+  padding: 9px 16px;
+    border:2px solid rgb(255, 255, 255);
+    border-radius: 40px;
+    margin: 0 0.25rem;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+.button:hover {
+  cursor: pointer;
+  background: #ECEFF1;
+  border-color: rgba(0, 0, 0, 0.25); text-decoration: none;
+}
+.button.is-active {
+  background: #007F0E;
+  color: white;
+  border-color: transparent;
+}
+.button.is-active:hover {
+  background: #004c08;
+}
+
+@media screen and (min-width: 769px) {
+  .questionBox {
+    -webkit-box-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+            justify-content: center;
+  }
+  .questionBox .questionContainer {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+  }
+}
+@media screen and (max-width: 768px) {
+  .sidebar {
+    height: auto !important;
+    border-radius: 6px 6px 0px 0px;
+  }
+}
